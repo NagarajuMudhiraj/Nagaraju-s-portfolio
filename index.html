@@ -1668,12 +1668,44 @@
         <button class="filter-btn" onclick="filterProjects('javascript', this)">JavaScript</button>
         <button class="filter-btn" onclick="filterProjects('java', this)">Java</button>
         <button class="filter-btn" onclick="filterProjects('fastapi', this)">FastAPI</button>
+        <button class="filter-btn" onclick="filterProjects('typescript', this)">TypeScript</button>
+        <button class="filter-btn" onclick="filterProjects('node', this)">Node.js</button>
       </div>
 
       <div class="projects-grid" id="projectsGrid">
 
-        <div class="project-card fade-in" data-tags="react,javascript,java">
-          <div class="project-header">
+        <div class="project-card fade-in" data-tags="react,typescript,python,fastapi,ai" style="border-color: rgba(201,151,58,0.35); position: relative;">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background: linear-gradient(90deg,#9b59b6,#C9973A); border-radius: 12px 12px 0 0;"></div>
+          <div style="position:absolute; top:12px; right:12px; background: linear-gradient(135deg,#9b59b6,#8e44ad); color:#fff; font-size:0.6rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.2rem 0.55rem; border-radius:100px;">🎙️ AI Assistant</div>
+          <div class="project-header" style="margin-top:0.5rem;">
+            <div class="project-icon">🎙️</div>
+            <div class="project-links">
+              <a href="https://github.com/NagarajuMudhiraj/jarvis--ai" target="_blank" class="project-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-title">Jarvis — AI Assistant & Desktop Automation</div>
+          <div class="project-desc">A voice-controlled AI assistant capable of real desktop automation (opening/closing apps, system monitoring). Features intelligent application control with fuzzy matching, web fallbacks, and "God Mode" for instant project scaffolding across 15+ languages. Includes system vision for screen analysis, self-correcting actions, and long-term semantic memory for context persistence across sessions.</div>
+          <div class="project-tags" style="margin-top:1rem;">
+            <span class="tag">React + TypeScript</span>
+            <span class="tag">Python FastAPI</span>
+            <span class="tag">Gemini AI</span>
+            <span class="tag">Desktop Automation</span>
+            <span class="tag">Semantic Memory</span>
+            <span class="tag">Voice UI</span>
+          </div>
+          <div style="margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
+            <span style="font-size:0.72rem; color:var(--text-muted);">🧠 Long-Term Memory · 🖥️ Desktop Control · 👁️ System Vision</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in" data-tags="react,javascript,node" style="border-color: rgba(201,151,58,0.35); position: relative;">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background: linear-gradient(90deg,#1A3A5C,#C9973A); border-radius: 12px 12px 0 0;"></div>
+          <div style="position:absolute; top:12px; right:12px; background: linear-gradient(135deg,#1A3A5C,#2a5a8c); color:#fff; font-size:0.6rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.2rem 0.55rem; border-radius:100px;">📚 Full-Stack</div>
+          <div class="project-header" style="margin-top:0.5rem;">
             <div class="project-icon">📚</div>
             <div class="project-links">
               <a href="https://github.com/NagarajuMudhiraj/Modern-E-Commerece-for-Books" target="_blank"
@@ -1686,39 +1718,31 @@
             </div>
           </div>
           <div class="project-title">Modern E-Commerce for Books</div>
-          <div class="project-desc">Developed a full-stack e-commerce platform with product browsing, user interface
-            optimization, and backend integration. Improved user experience with modern UI and responsive design.</div>
-          <div class="project-tags">
-            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Spring Boot</span>
+          <div class="project-desc">A feature-rich full-stack bookstore platform with seamless browsing (category filters, keyword search), a dynamic cart with real-time price calculations, multi-step secure checkout with order history, and a wishlist system. Admin side includes a real-time analytics dashboard with interactive charts, full catalog &amp; inventory management, order tracking, and user account controls — all powered by real-time Socket.io events and JWT-secured APIs.</div>
+          <div class="project-tags" style="margin-top:1rem;">
+            <span class="tag">React 19 + Vite</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Framer Motion</span>
+            <span class="tag">Node.js + Express</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Socket.io</span>
+            <span class="tag">JWT + Bcrypt</span>
+            <span class="tag">Recharts</span>
+          </div>
+          <div style="margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
+            <span style="font-size:0.72rem; color:var(--text-muted);">👤 Customer: Cart · Wishlist · Checkout · Order History</span>
+            <span style="font-size:0.72rem; color:var(--text-muted);">🛠️ Admin: Analytics · Catalog · Orders · Users</span>
           </div>
         </div>
 
-        <div class="project-card fade-in fade-in-delay-1" data-tags="python,ai">
-          <div class="project-header">
-            <div class="project-icon">💼</div>
+        <div class="project-card fade-in" data-tags="react,typescript,ai,javascript" style="border-color: rgba(201,151,58,0.35); position: relative;">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background: linear-gradient(90deg,#2ecc71,#C9973A); border-radius: 12px 12px 0 0;"></div>
+          <div style="position:absolute; top:12px; right:12px; background: linear-gradient(135deg,#2ecc71,#27ae60); color:#fff; font-size:0.6rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.2rem 0.55rem; border-radius:100px;">🥗 Zero-Waste AI</div>
+          <div class="project-header" style="margin-top:0.5rem;">
+            <div class="project-icon">🥗</div>
             <div class="project-links">
-              <a href="https://github.com/NagarajuMudhiraj/CFO-Hepler-Agent" target="_blank" class="project-link"
-                title="GitHub">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-title">CFO Helper Agent</div>
-          <div class="project-desc">Built an AI-based financial assistant to automate data analysis and assist
-            decision-making. Integrated machine learning concepts for financial insights and workflow automation.</div>
-          <div class="project-tags">
-            <span class="tag">Python</span><span class="tag">AI</span>
-          </div>
-        </div>
-
-        <div class="project-card fade-in fade-in-delay-2" data-tags="python,ai">
-          <div class="project-header">
-            <div class="project-icon">🌿</div>
-            <div class="project-links">
-              <a href="https://github.com/NagarajuMudhiraj/agroai-plant-disease-detector" target="_blank"
+              <a href="https://github.com/NagarajuMudhiraj/smart-canteen/tree/main/Hack_Ananta-Pixel-Pirates--master" target="_blank"
                 class="project-link" title="GitHub">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                   <path
@@ -1727,39 +1751,58 @@
               </a>
             </div>
           </div>
-          <div class="project-title">AgroAI Plant Disease Detector</div>
-          <div class="project-desc">Developed a computer vision model to detect plant diseases from images, helping
-            farmers take early action. Implemented machine learning algorithms for accurate prediction.</div>
-          <div class="project-tags">
-            <span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Computer
-              Vision</span>
+          <div class="project-title">Smart Canteen — AI-Powered Zero-Waste Dining</div>
+          <div class="project-desc">A comprehensive AI-powered system integrated with Google Gemini Pro to transform traditional dining into a sustainable, zero-waste operation. Features a "Demand Forecaster" to predict requirements based on consumption trends and a "Leftover Alchemist" that turns surplus ingredients into special surprise dishes. Includes multi-role interfaces for students (dynamic ordering, sustainability tracking), kitchen staff (live KDS display), and administrators (strategic waste trend analytics).</div>
+          <div class="project-tags" style="margin-top:1rem;">
+            <span class="tag">React 19 + Vite</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Gemini Pro AI</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Recharts</span>
+            <span class="tag">Sustainability Tracking</span>
+          </div>
+          <div style="margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
+            <span style="font-size:0.72rem; color:var(--text-muted);">👤 Student: Ordering · Sustainability Tracking</span>
+            <span style="font-size:0.72rem; color:var(--text-muted);">🛠️ Admin: Waste Trends · AI Strategies · Menu Management</span>
           </div>
         </div>
 
-        <div class="project-card fade-in" data-tags="javascript">
-          <div class="project-header">
-            <div class="project-icon">🗺️</div>
+        <div class="project-card fade-in fade-in-delay-2" data-tags="react,typescript,ai" style="border-color: rgba(201,151,58,0.35); position: relative;">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background: linear-gradient(90deg,#27ae60,#C9973A); border-radius: 12px 12px 0 0;"></div>
+          <div style="position:absolute; top:12px; right:12px; background: linear-gradient(135deg,#27ae60,#2ecc71); color:#fff; font-size:0.6rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.2rem 0.55rem; border-radius:100px;">🚜 Smart Agriculture</div>
+          <div class="project-header" style="margin-top:0.5rem;">
+            <div class="project-icon">🌿</div>
             <div class="project-links">
-              <a href="https://github.com/NagarajuMudhiraj/3dNavigationcampus" target="_blank" class="project-link"
-                title="GitHub">
+              <a href="https://github.com/NagarajuMudhiraj/agroai-plant-disease-detector" target="_blank"
+                class="project-link" title="GitHub">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                 </svg>
               </a>
             </div>
           </div>
-          <div class="project-title">3D Navigation System</div>
-          <div class="project-desc">Built an interactive 3D campus navigation system using Three.js, enabling users to
-            explore buildings and find paths between locations with real-time visualization.</div>
-          <div class="project-tags">
-            <span class="tag">JavaScript</span><span class="tag">Three.js</span><span class="tag">3D Web</span>
+          <div class="project-title">AgroAI — Plant Disease & Nutrient Analyzer</div>
+          <div class="project-desc">A multimodal agricultural AI platform providing high-confidence diagnosis for crop diseases and N-P-K nutrient deficiencies using Gemini 1.5 Flash. Features localized advice with Indian brand formulations, health scoring (0-100), and multi-step Integrated Pest Management (IPM) plans. Includes weather-aware treatment advisories, a farm activity calendar, and personalized farmer profiles to track history over time.</div>
+          <div class="project-tags" style="margin-top:1rem;">
+            <span class="tag">React 19 + Vite</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Gemini 1.5 Flash</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Weather APIs</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
+          <div style="margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
+            <span style="font-size:0.72rem; color:var(--text-muted);">🩺 Multimodal Analysis · 🧪 Nutrient Analyzer · 📅 Farm Management</span>
+            <span style="font-size:0.72rem; color:var(--text-muted);">🇮🇳 Localized Treatments · ⛅ Weather Integrated Advisories</span>
           </div>
         </div>
 
-        <div class="project-card fade-in fade-in-delay-1" data-tags="java">
-          <div class="project-header">
-            <div class="project-icon">✅</div>
+
+        <div class="project-card fade-in fade-in-delay-1" data-tags="python,ai,node,javascript" style="border-color: rgba(201,151,58,0.35); position: relative;">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background: linear-gradient(90deg,#27ae60,#C9973A); border-radius: 12px 12px 0 0;"></div>
+          <div style="position:absolute; top:12px; right:12px; background: linear-gradient(135deg,#27ae60,#1e8449); color:#fff; font-size:0.6rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.2rem 0.55rem; border-radius:100px;">📸 AI-Powered</div>
+          <div class="project-header" style="margin-top:0.5rem;">
+            <div class="project-icon">🤖</div>
             <div class="project-links">
               <a href="https://github.com/NagarajuMudhiraj/attendance-system" target="_blank" class="project-link"
                 title="GitHub">
@@ -1770,11 +1813,20 @@
               </a>
             </div>
           </div>
-          <div class="project-title">Attendance System</div>
-          <div class="project-desc">Developed a smart attendance system with database integration for efficient record
-            management and reporting.</div>
-          <div class="project-tags">
-            <span class="tag">Java</span><span class="tag">Database</span><span class="tag">Automation</span>
+          <div class="project-title">Smart Attendance System — AI Face Recognition</div>
+          <div class="project-desc">Full-stack AI-powered attendance management system using face recognition (OpenCV LBPH algorithm) for automated real-time tracking. Student faces are captured, trained into a model, and recognized live via webcam — auto-marking attendance with a confidence score. Real-time dashboard updates via Socket.io (8+ events), role-based access for Admin, Staff &amp; Student, attendance reports with CSV export, and a microservice architecture (Node.js + Flask AI service) backed by MongoDB Atlas with local SQLite failover.</div>
+          <div class="project-tags" style="margin-top:1rem;">
+            <span class="tag">Python + Flask</span>
+            <span class="tag">OpenCV (LBPH)</span>
+            <span class="tag">Node.js + Express</span>
+            <span class="tag">Socket.io</span>
+            <span class="tag">MongoDB Atlas</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Face Recognition</span>
+          </div>
+          <div style="margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
+            <span style="font-size:0.72rem; color:var(--text-muted);">🎯 LBPH Face Recognizer · Auto Webcam Marking</span>
+            <span style="font-size:0.72rem; color:var(--text-muted);">👥 Admin · Staff · Student Roles · CSV Export</span>
           </div>
         </div>
 
